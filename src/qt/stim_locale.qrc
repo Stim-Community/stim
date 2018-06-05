@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/stim_bg.qm</file>
+        <file alias="de">locale/stim_de.qm</file>
+        <file alias="en">locale/stim_en.qm</file>
+        <file alias="es">locale/stim_es.qm</file>
+        <file alias="fi">locale/stim_fi.qm</file>
+        <file alias="fr">locale/stim_fr.qm</file>
+        <file alias="it">locale/stim_it.qm</file>
+        <file alias="ja">locale/stim_ja.qm</file>
+        <file alias="pl">locale/stim_pl.qm</file>
+        <file alias="pt">locale/stim_pt.qm</file>
+        <file alias="ru">locale/stim_ru.qm</file>
+        <file alias="sk">locale/stim_sk.qm</file>
+        <file alias="sv">locale/stim_sv.qm</file>
+        <file alias="vi">locale/stim_vi.qm</file>
+        <file alias="zh_CN">locale/stim_zh_CN.qm</file>
+        <file alias="zh_TW">locale/stim_zh_TW.qm</file>
+    </qresource>
+</RCC>

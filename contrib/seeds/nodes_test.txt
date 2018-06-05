@@ -1,0 +1,4 @@
+# List of fixed seed nodes for testnet
+209.250.236.195:18092
+104.156.249.248:18092
+# Onion nodes

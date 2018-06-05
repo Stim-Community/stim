@@ -1,0 +1,22 @@
+[Unit]
+Description=Stim's distributed currency daemon
+After=network.target
+
+[Service]
+User=stimcore
+Group=stimcore
+
+Type=forking
+PIDFile=/var/lib/stimd/stimd.pid
+ExecStart=/usr/bin/stimd -daemon -pid=/var/lib/stimd/stimd.pid \
+-conf=/etc/stimcore/stim.conf -datadir=/var/lib/stimd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

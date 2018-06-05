@@ -1,0 +1,6 @@
+usr/local/bin/stim-qt usr/bin
+share/pixmaps/stim32.xpm usr/share/pixmaps
+share/pixmaps/stim16.xpm usr/share/pixmaps
+share/pixmaps/stim128.png usr/share/pixmaps
+debian/stim-qt.desktop usr/share/applications
+debian/stim-qt.protocol usr/share/kde4/services/

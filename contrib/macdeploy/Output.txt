@@ -1,0 +1,1 @@
+{'app_bundle': ['asdasdasdasdds'], 'verbose': [1], 'plugins': True, 'strip': True, 'sign': False, 'dmg': None, 'fancy': [], 'add_qt_tr': [], 'translations_dir': None, 'add_resources': []}
