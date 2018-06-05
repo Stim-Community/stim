@@ -1,0 +1,2 @@
+src/clientversion.cpp export-subst
+src/libbitcoin_server.a filter=lfs diff=lfs merge=lfs -text
