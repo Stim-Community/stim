@@ -4,7 +4,7 @@
 
 	* means the category has an associated class
 	
-	CStimNetwork: GOBYTE NETWORK (ROOT)
+	CStimNetwork: STIM NETWORK (ROOT)
 	has:
 		vector<CNetworkVariable> vecNetworkVariables;
 		vector<CStimProject> vecProjects;
@@ -19,7 +19,7 @@
 
 */
 
-	// GOBYTE NETWORK (ROOT)
+	// STIM NETWORK (ROOT)
 	// 	-> NETWORK VARIABLE
 	// 		-> switch, setting
 	// 	-> CATEGORIES
