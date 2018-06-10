@@ -7,6 +7,6 @@ Stim is a self-reliant established on a Proof of Work and Masternode system.  Ev
 
 https://stimco.in/
 
-https://bitcointalk.org/index.php?topic=4422894.new#new
+https://bitcointalk.org/index.php?topic=4422894
 
 https://discord.gg/A4Ck9Pt
