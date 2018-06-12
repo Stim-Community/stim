@@ -1,5 +1,5 @@
 
-/*
+/**
 	CATEGORY MAPPING
 
 	* means the category has an associated class
