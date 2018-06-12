@@ -283,7 +283,7 @@ public:
 
     uint256 GetHash() const;
 
-    // GET VOTE COUNT FOR SIGNAL
+    /// GET VOTE COUNT FOR SIGNAL
 
     int CountMatchingVotes(vote_signal_enum_t eVoteSignalIn, vote_outcome_enum_t eVoteOutcomeIn) const;
 
@@ -295,19 +295,19 @@ public:
 
     bool GetCurrentMNVotes(const CTxIn& mnCollateralOutpoint, vote_rec_t& voteRecord);
 
-    // FUNCTIONS FOR DEALING WITH DATA STRING
+    /// FUNCTIONS FOR DEALING WITH DATA STRING
 
     std::string GetDataAsHex();
     std::string GetDataAsString();
 
-    // SERIALIZER
+    /// SERIALIZER
 
     ADD_SERIALIZE_METHODS;
 
     template <typename Stream, typename Operation>
     inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion)
     {
-        // SERIALIZE DATA FOR SAVING/LOADING OR NETWORK FUNCTIONS
+        /// SERIALIZE DATA FOR SAVING/LOADING OR NETWORK FUNCTIONS
 
         READWRITE(nHashParent);
         READWRITE(nRevision);
@@ -318,7 +318,7 @@ public:
         READWRITE(vinMasternode);
         READWRITE(vchSig);
         if(nType & SER_DISK) {
-            // Only include these for the disk file format
+            /// Only include these for the disk file format
             LogPrint("gobject", "CGovernanceObject::SerializationOp Reading/writing votes from/to disk\n");
             READWRITE(nDeletionTime);
             READWRITE(fExpired);
@@ -327,7 +327,7 @@ public:
             LogPrint("gobject", "CGovernanceObject::SerializationOp hash = %s, vote count = %d\n", GetHash().ToString(), fileVotes.GetVoteCount());
         }
 
-        // AFTER DESERIALIZATION OCCURS, CACHED VARIABLES MUST BE CALCULATED MANUALLY
+        /// AFTER DESERIALIZATION OCCURS, CACHED VARIABLES MUST BE CALCULATED MANUALLY//
     }
 
     CGovernanceObject& operator=(CGovernanceObject from)
@@ -337,7 +337,7 @@ public:
     }
 
 private:
-    // FUNCTIONS FOR DEALING WITH DATA STRING
+    /// FUNCTIONS FOR DEALING WITH DATA STRING
     void LoadData();
     void GetData(UniValue& objResult);
 
