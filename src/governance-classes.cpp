@@ -19,7 +19,7 @@
 // DECLARE GLOBAL VARIABLES FOR GOVERNANCE CLASSES
 CGovernanceTriggerManager triggerman;
 
-// SPLIT UP STRING BY DELIMITER
+/// SPLIT UP STRING BY DELIMITER
 // http://www.boost.org/doc/libs/1_58_0/doc/html/boost/algorithm/split_idp202406848.html
 std::vector<std::string> SplitBy(std::string strCommand, std::string strDelimit)
 {
@@ -512,7 +512,7 @@ CSuperblock(uint256& nHash)
     DBG( cout << "CSuperblock Constructor End" << endl; );
 }
 
-/**
+/***
  *   Is Valid Superblock Height
  *
  *   - See if a block at this height can be a superblock
