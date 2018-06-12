@@ -39,7 +39,7 @@
  *   cantract-status-error none, error1, error2
  *   committee-type research, business_advisory, economic_advisory
  *
- *   // note: How enums work
+ *   /// note: How enums work
  *   enum-type one, two, three //defined in code, or the defintion could be packed ino this field
  *
  * CLASSES
