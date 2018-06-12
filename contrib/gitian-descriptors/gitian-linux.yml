@@ -1,5 +1,5 @@
 ---
-name: "stim-linux-0.12"
+name: "stim-linux-1.0.0.1"
 enable_cache: true
 suites:
 - "trusty"
@@ -18,9 +18,9 @@ packages:
 - "binutils-gold"
 - "ca-certificates"
 - "python"
-reference_datetime: "2017-01-01 00:00:00"
+reference_datetime: "2018-06-05 21:08:28"
 remotes:
-- "url": "https://github.com/stimcoin/stim.git"
+- "url": "https://github.com/STM0x0/stim.git"
   "dir": "stim"
 files: []
 script: |
