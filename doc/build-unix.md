@@ -50,19 +50,31 @@ Optional dependencies:
 
 For the versions used in the release, see [release-process.md](release-process.md) under *Fetch and build inputs*.
 
+
 System requirements
 --------------------
 
-C++ compilers are memory-hungry. It is recommended to have at least 1 GB of
-memory available when compiling Stim Core. With 512MB of memory or less
-compilation will take much longer due to swap thrashing.
+C++ compilers are memory-hungry. It is recommended to have at least 3 GB of
+memory available when compiling Stim Core. With 1GB of memory or less
+compilation will fail. On a system with 1GB or less you will need to create a swapfile.
+
+To create a temporary 2GB swapfile for compile:
+
+
+<p>cd /</p>
+<p>sudo dd if=/dev/zero of=/var/swapfile1 bs=1024k count=2000</p>
+<p>sudo mkswap /var/swapfile1</p>
+<p>sudo chmod 0600 /var/swapfile1</p>
+<p>sudo swapon /var/swapfile1</p>
+<p>cd --</p>    
+  
 
 Dependency Build Instructions: Ubuntu & Debian
 ----------------------------------------------
 Build requirements:
 
-    sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
-
+    sudo apt-get install software-properties-common build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
+    
 On at least Ubuntu 14.04+ and Debian 7+ there are generic names for the
 individual boost development packages, so the following can be used to only
 install necessary parts of boost:
@@ -76,7 +88,6 @@ If that doesn't work, you can install all boost development packages with:
 BerkeleyDB is required for the wallet. db4.8 packages are available [here](https://launchpad.net/~bitcoin/+archive/bitcoin).
 You can add the repository and install using the following commands:
 
-    sudo apt-get install software-properties-common
     sudo add-apt-repository ppa:bitcoin/bitcoin
     sudo apt-get update
     sudo apt-get install libdb4.8-dev libdb4.8++-dev
@@ -121,8 +132,8 @@ built by default.
 
 Notes
 -----
-The release is built with GCC and then "strip stimd" to strip the debug
-symbols, which reduces the executable size by about 90%.
+To speed up the compile process you can pass `--disable-tests` and `--disable-gui-tests`. The release is built with GCC and then "strip stimd" to strip the debug
+symbols, which reduces the executable size by about 40%.
 
 
 miniupnpc
