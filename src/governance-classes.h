@@ -1,3 +1,4 @@
+
 // Copyright (c) 2014-2017 The Dash Core developers
 // Copyright (c) 2017-2018 The Stim Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -25,13 +26,13 @@ static const int TRIGGER_SUPERBLOCK         = 1000;
 
 typedef boost::shared_ptr<CSuperblock> CSuperblock_sptr;
 
-/// DECLARE GLOBAL VARIABLES FOR GOVERNANCE CLASSES
+// DECLARE GLOBAL VARIABLES FOR GOVERNANCE CLASSES
 extern CGovernanceTriggerManager triggerman;
 
-/// SPLIT A STRING UP - USED FOR SUPERBLOCK PAYMENTS
+// SPLIT A STRING UP - USED FOR SUPERBLOCK PAYMENTS
 std::vector<std::string> SplitBy(std::string strCommand, std::string strDelimit);
 
-//**
+/**
 *   Trigger Mananger
 *
 *   - Track governance objects which are triggers
