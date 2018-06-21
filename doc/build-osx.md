@@ -41,7 +41,8 @@ NOTE: Building with Qt4 is still supported, however, could result in a broken UI
 
 1. Clone the GitHub tree to get the source code and go into the directory.
 
-        git clone https://github.com/stimcoin/stim.git
+        sudo git clone https://github.com/Stim-Community/stim.git
+        sudo chmod -R 777 stim
         cd stim
 
 2.  Build Stim Core:
