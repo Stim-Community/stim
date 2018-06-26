@@ -45,8 +45,8 @@ const std::string CLIENT_NAME("Stim Core");
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID "23658f9"
-#define GIT_COMMIT_DATE "Mon, 4 Jun 2018 12:12:23 -0400"
+#define GIT_COMMIT_ID "b4d5212"
+#define GIT_COMMIT_DATE "Tue, 26 Jun 2018 11:14:26 -0400"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \
